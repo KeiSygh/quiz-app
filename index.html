@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Codedamn - Quiz Project</title>
+</head>
+
+<body>
+    <nav>
+        <a id="leaderboard">View Highscores <i class="fas fa-hand-point-left fa-lg"></i></a>
+        <span>Time: <span id="countdown">0</span></span>
+    </nav>
+
+    <main>
+        <section id="instructions" class="">
+            <h2>Coding Quiz Challenge</h2>
+            <p>Answer the following questions within the time limit.</p>
+            <p>Incorrect answers will subtract 10 seconds from your time.</p>
+            <button id="start-btn">Start Quiz</button>
+        </section>
+
+        <section id="quiz" class="hidden">
+            <h2 id="question">My Question</h2>
+            <div id="options">
+            </div>
+            <span id="result">
+            </span>
+        </section>
+        
+        <section id="score" class="hidden">
+            <h2>All done!</h2>
+            <p>Your final score is <span id="user-score">0</span>.</p>
+            <label for="Initials">Enter Initials: </label><input type = "text" id="user-initials" name = "Initials" maxlength=2/>
+            <button id="score-submit-button">Submit</button>
+        </section>
+
+        <section id="highscores" class="hidden">
+            <h2>Highscores</h2>
+            <ol id="saved-scores"></ol>
+            <button id="back">Go Back</button>  <button id="clear-scores">Clear High Scores</button> 
+        </section>
+    </main>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
